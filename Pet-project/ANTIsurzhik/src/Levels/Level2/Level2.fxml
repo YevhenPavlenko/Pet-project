@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color:#0d688f;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Levels.Level2.Level2Controller">
+    <children>
+        <Text fx:id="incorrectWord1" fill="WHITE" layoutX="430.0" layoutY="700.0" rotate="-28.8" strokeType="OUTSIDE" strokeWidth="0.0" text="Венгрія">
+            <font>
+                <Font size="36.0" />
+            </font>
+      </Text>
+
+        <Text fx:id="incorrectWord5" fill="WHITE" layoutX="777.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: 50;" text="Словакія">
+            <font>
+                <Font size="36.0" />
+            </font>
+      </Text>
+        <GridPane fx:id="gridPane" alignment="CENTER" layoutX="154.0" layoutY="131.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" AnchorPane.bottomAnchor="131.0" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="153.0" AnchorPane.topAnchor="131.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="45.0" prefWidth="45.0" />
+
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+
+                <TextField fx:id="textField1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="textField2" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" text="г" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="textField3" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="textField4" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <TextField fx:id="textField5" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <TextField fx:id="textField6" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <TextField fx:id="textField7" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <TextField fx:id="textField8" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" text="а" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+
+                <TextField fx:id="textField9" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                <TextField fx:id="textField10" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                <TextField fx:id="textField11" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                <TextField fx:id="textField12" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                <TextField fx:id="textField13" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                <TextField fx:id="textField14" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                <TextField fx:id="textField15" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                <TextField fx:id="textField16" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+                <TextField fx:id="textField17" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="10" GridPane.rowIndex="8" />
+                <TextField fx:id="textField18" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="47.0" prefWidth="51.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="11" GridPane.rowIndex="8" />
+
+                <TextField fx:id="textField19" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                <TextField fx:id="textField20" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                <TextField fx:id="textField21" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" text="м" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                <TextField fx:id="textField22" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                <TextField fx:id="textField23" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                <TextField fx:id="textField24" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+                <TextField fx:id="textField25" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+                <TextField fx:id="textField26" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+
+                <TextField fx:id="textField27" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" text="т" GridPane.columnIndex="10" GridPane.rowIndex="0" />
+                <TextField fx:id="textField28" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+                <TextField fx:id="textField29" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+                <TextField fx:id="textField30" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+                <TextField fx:id="textField31" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+                <TextField fx:id="textField32" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" text="ч" GridPane.columnIndex="10" GridPane.rowIndex="5" />
+                <TextField fx:id="textField33" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="10" GridPane.rowIndex="6" />
+                <TextField fx:id="textField34" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="10" GridPane.rowIndex="7" />
+
+                <TextField fx:id="textField35" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                <TextField fx:id="textField36" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" text="л" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                <TextField fx:id="textField37" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                <TextField fx:id="textField38" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                <TextField fx:id="textField39" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+                <TextField fx:id="textField40" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="11" GridPane.rowIndex="5" />
+                <TextField fx:id="textField41" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="12" GridPane.rowIndex="5" />
+                <TextField fx:id="textField42" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="13" GridPane.rowIndex="5" />
+                <TextField fx:id="textField43" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="72.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="14" GridPane.rowIndex="5" />
+
+                <TextField fx:id="textField44" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                <TextField fx:id="textField45" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" text="і" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                <TextField fx:id="textField46" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                <TextField fx:id="textField47" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                <TextField fx:id="textField48" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="11" GridPane.rowIndex="2" />
+                <TextField fx:id="textField49" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="12" GridPane.rowIndex="2" />
+                <TextField fx:id="textField50" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="13" GridPane.rowIndex="2" />
+                <TextField fx:id="textField51" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="14" GridPane.rowIndex="2" />
+                <TextField fx:id="textField52" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#textFieldMove" onKeyTyped="#addTextListeners" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;" GridPane.columnIndex="15" GridPane.rowIndex="2" />
+
+            </children>
+        </GridPane>
+        <Button fx:id="Go_Back" contentDisplay="CENTER" layoutX="37.0" layoutY="31.0" mnemonicParsing="false" onAction="#switchTo_Choose" prefHeight="42.0" prefWidth="52.0" style="-fx-background-color: #7BC2E1;" text="&lt;" textFill="#0d688f">
+            <font>
+                <Font name="Impact" size="23.0" />
+            </font>
+            <effect>
+                <Lighting diffuseConstant="1.62" specularConstant="0.52" specularExponent="34.31" surfaceScale="1.13">
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                    </light>
+                </Lighting>
+            </effect>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Text fx:id="incorrectWord3" fill="WHITE" layoutX="-3.0" layoutY="-4.0" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: -60;" text="Германія" x="42.0" y="353.0">
+            <font>
+                <Font size="36.0" />
+            </font></Text>
+        <Text fx:id="incorrectWord6" fill="WHITE" layoutX="747.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: 35;" text="Голандія" wrappingWidth="171.287109375">
+            <font>
+                <Font size="36.0" />
+            </font></Text>
+      <Text fx:id="incorrectWord4" fill="WHITE" layoutX="65.0" layoutY="730.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Турція">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+        <Text fx:id="incorrectWord2" fill="WHITE" layoutX="194.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Азербайжан" wrappingWidth="209.33790588378906">
+            <font>
+                <Font size="36.0" />
+            </font>
+      </Text>
+
+    </children>
+</AnchorPane>

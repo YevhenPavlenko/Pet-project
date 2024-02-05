@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.Cursor?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #669CB4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Program.Main.Main">
+   <children>
+      <ImageView fitHeight="491.0" fitWidth="714.0" layoutX="-57.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Main.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="340.0" fitWidth="372.0" layoutX="114.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/logo_.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="startButton" layoutX="150.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleStartButtonAction" prefHeight="55.0" prefWidth="300.0" style="-fx-background-color: #eec12d; -fx-background-radius: 10; -fx-border-color: #000000; -fx-border-radius: 10;" text="Почати гру">
+         <font>
+            <Font name="Calibri Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="exitButton" layoutX="150.0" layoutY="303.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleExitButtonAction" prefHeight="55.0" prefWidth="300.0" style="-fx-background-color: #eec12d; -fx-background-radius: 10; -fx-border-color: #000000; -fx-border-radius: 10;" text="Вийти">
+         <font>
+            <Font name="Calibri Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="aboutButton" layoutX="150.0" layoutY="236.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleAboutButtonAction" prefHeight="55.0" prefWidth="300.0" style="-fx-background-color: #eec12d; -fx-background-radius: 10; -fx-border-color: #000000; -fx-border-radius: 10;" text="Про гру">
+         <font>
+            <Font name="Calibri Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
